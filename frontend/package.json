@@ -1,0 +1,22 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "Para crear un pequeño servidor e importar hojas de estilos: \r $ npm i lite-server",
+  "main": "app.js",
+  "dependencies": {
+    "@popperjs/core": "^2.10.2",
+    "@truffle/contract": "^4.3.42",
+    "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.7.2",
+    "ethers": "^5.5.2",
+    "lite-server": "^2.6.1",
+    "web3": "^1.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

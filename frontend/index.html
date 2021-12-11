@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>NFTs Arte | DApp</title>
+
+        <meta name="theme-color" content="#F0DB4F">
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <link rel="shortcut icon" type="image/png" href="./img/nft-shop-32.png">
+        <link rel="apple-touch-icon" href="./img/nft-shop-32.png">
+        <link rel="apple-touch-startup-image" href="./img/nft-shop-32.png">
+        <link rel="manifest" href="./manifest.json">
+
+        <link rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/libs/bootstrap-icons/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="./main.css" />
+        <!-- Google icons -->
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+
+        <div id="myModal" class="modal">
+            <img class="modal-content" id="img01"/>
+            <div id="caption"></div>
+        </div>
+
+        <div class="container py-5">
+            <!--Bootstrap crea un total de 12 columnas-->
+            <div class="row">   
+                <div class="col-md-4">
+                    <div class="card card-body bg-dark rounded-lg mb-4">
+                        <h1>
+                            <span class="material-icons"> grid_view </span>
+                            DApp NFTs 
+                        </h1>
+                        <h6 class="text-muted">Compra/venta descentralizada de NFTs</h6> </br>
+                        <div class="d-flex align-items-center">
+                            <span class="material-icons"> account_balance_wallet </span>
+                            <span class="ms-2">Wallet</span>
+                        </div>
+                        <span id="account"></span>
+                    </div>
+
+                    <div class="card card-body bg-dark rounded-lg mb-4">
+                        <h4>COMPRA DE NFTs</h4><hr>
+                        <h6>En este apartado, podrás adquirir distinta variedad de NFTs disponibles.</h6></br>
+                        <h6 class="text-muted">Si desea vender NFTs disponibles en su cartera virtual, diríjase al siguiente enlace:</h6></br>
+                        <div class="d-flex align-items-center">
+                            <a href="https://www.w3schools.com">
+                                <button class="btn btn-primary">
+                                    <i class="bi bi-view-stacked"></i>
+                                </button>
+                            </a>
+                            <span class="ms-2">Venta de NFTs</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div id="NFTList"></div>
+                    <img src="" id="pruebas"/>
+                </div>
+            </div>
+        </div>
+
+        <!-- <script src="/libs/web3/dist/web3.min.js"></script> -->
+        
+        <script src="/libs/@truffle/contract/dist/truffle-contract.min.js"></script>
+        <script src="./app.js"></script>
+        <script src="./image.js"></script>
+        <script src="./ui.js"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>
+
+<!--
+                    <form id="createNFT" class="card card-body bg-dark">
+                        <h4>Crear un NFT</h4>
+                        <input
+                            type="text"
+                            id="title"
+                            class="form-control bg-dark border-0 rounded-0 text-light my-4"
+                            placeholder="Escribe el título..."
+                            autofocus
+                        />
+                        <input
+                            type="text"
+                            id="author"
+                            class="form-control bg-dark border-0 rounded-0 text-light my-4"
+                            placeholder="Escribe el autor..."
+                            autofocus
+                        />
+                        <input
+                            type="text"
+                            id="date"
+                            class="form-control bg-dark border-0 rounded-0 text-light my-4"
+                            placeholder="Escribe la fecha de creación..."
+                            autofocus
+                        />
+                        <textarea
+                            id="description"
+                            rows="2"
+                            class="form-control bg-dark border-0 rounded-0 text-light my-4"
+                            placeholder="Esta obra de arte..."
+                        ></textarea>
+                        <button class="btn btn-primary">GUARDAR</button>
+                    </form>
+-->
