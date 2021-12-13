@@ -8,7 +8,10 @@ const CACHE_NAME = 'v1_cache_tienda_NFTs',
     '/libs/bootstrap-icons/font/bootstrap-icons.css',
     './main.css',
     './script.js',
-    './img/nft-shop-32.png'
+    './img/nft-shop-32.png',
+    './image.js',
+    './ui.js',
+    './app.js'
   ]
 
 //durante la fase de instalación, generalmente se almacena en caché los activos estáticos
